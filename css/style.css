@@ -20,9 +20,13 @@ ul {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   height: 120px;
   padding: 0 30px;
   border-bottom: 1px solid grey;
+  background-color: white;
   color: #5f6368;
 }
 
@@ -90,15 +94,19 @@ header nav ul li a.active::after {
   background-color: lightseagreen;
 }
 
-section {
+main {
+  margin-top: 210px;
+}
+
+main section {
   margin: 100px 0px;
 }
 
-section p {
+main section p {
   margin-top: 2rem;
 }
 
-section p a {
+main section p a {
   text-decoration: unset;
 }
 /*# sourceMappingURL=style.css.map */
