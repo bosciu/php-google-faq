@@ -82,8 +82,13 @@
     <header></header>
     <main>
         <div class="container">
-            <?php foreach ($sections as $value) { ?>
-                <section></section>
+            <?php foreach ($sections as $section) { ?>
+                <section>
+                    <h2><?= $section["title"] ?></h2>
+                    <?php foreach($section["paragraphs"] as $paragrafo){?>
+                        <p><?= $paragrafo ?></p>    
+                    <?php } ?>
+                </section>
             <?php } ?>
         </div>
     </main>
